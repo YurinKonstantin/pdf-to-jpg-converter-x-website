@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - PDF to JPG Converter X</title>
+    <link rel="icon" type="image/png" href="../favicon.png">
     <style>
         :root { --primary: #0078d4; --text: #201f1e; --bg: #f3f2f1; --card: #ffffff; }
         body { font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; padding: 0; }
-        header { background: var(--card); border-bottom: 1px solid #e1dfdd; padding: 20px 30px; display: flex; justify-content: space-between; align-items: center; }
-        .brand h1 { margin: 0; font-size: 20px; color: var(--primary); }
-        .lang-switch a { text-decoration: none; color: var(--primary); padding: 6px 12px; border: 1px solid var(--primary); border-radius: 4px; font-size: 13px; font-weight: 600; margin-left: 8px; }
+        header { background: var(--card); border-bottom: 1px solid #e1dfdd; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 8px rgba(0,0,0,0.02); }
+        .header-left { display: flex; align-items: center; gap: 15px; }
+        .app-icon { width: 40px; height: 40px; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.12)); }
+        .brand h1 { margin: 0; font-size: 22px; color: var(--primary); font-weight: 700; }
+        .lang-switch a { text-decoration: none; color: var(--primary); padding: 6px 12px; border: 1px solid var(--primary); border-radius: 6px; font-size: 13px; font-weight: 600; margin-left: 8px; }
         .lang-switch a.active { background: var(--primary); color: white; }
-        .container { max-width: 800px; margin: 30px auto; padding: 0 20px; }
-        .card { background: var(--card); padding: 30px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
-        h2 { color: var(--primary); }
+        .container { max-width: 850px; margin: 40px auto; padding: 0 20px; }
+        .card { background: var(--card); padding: 40px; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.04); border: 1px solid #edebe9; }
+        h2 { color: var(--primary); font-size: 20px; margin-top: 25px; border-bottom: 1px solid #f3f2f1; padding-bottom: 5px; }
         .back-link { display: inline-block; margin-bottom: 20px; color: var(--primary); text-decoration: none; font-weight: bold; }
         .back-link:hover { text-decoration: underline; }
     </style>
@@ -21,8 +24,11 @@
 <body>
 
 <header>
-    <div class="brand">
-        <h1>Privacy Policy</h1>
+    <div class="header-left">
+        <img src="../app_logo.png" alt="Logo" class="app-icon">
+        <div class="brand">
+            <h1>Privacy Policy</h1>
+        </div>
     </div>
     <div class="lang-switch">
         <a href="#" class="active">EN</a>
