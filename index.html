@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF to JPG Converter X - Official Site</title>
+    <style>
+        :root { --primary: #0078d4; --text: #201f1e; --bg: #f3f2f1; --card: #ffffff; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; padding: 0; }
+        header { background: var(--card); border-bottom: 1px solid #e1dfdd; padding: 20px; text-align: center; position: sticky; top: 0; z-index: 100; }
+        .lang-switch { margin-bottom: 15px; }
+        .lang-btn { background: none; border: 1px solid var(--primary); color: var(--primary); padding: 5px 15px; cursor: pointer; border-radius: 4px; font-weight: 600; }
+        .lang-btn.active { background: var(--primary); color: white; }
+        .container { max-width: 800px; margin: 30px auto; padding: 0 20px; }
+        .card { background: var(--card); padding: 30px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 25px; }
+        h1, h2 { color: var(--primary); }
+        h1 { margin-top: 0; }
+        ul { padding-left: 20px; }
+        footer { text-align: center; padding: 20px; color: #605e5c; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="lang-switch">
+        <button class="lang-btn active" onclick="switchLang('en')">EN</button>
+        <button class="lang-btn" onclick="switchLang('ru')">RU</button>
+    </div>
+    <h1 id="main-title">PDF to JPG Converter X</h1>
+    <p id="main-subtitle">Batch Print & Image Resize Engine for Windows</p>
+</header>
+
+<div class="container">
+    <!-- PROMO SECTION -->
+    <section class="card" id="promo-section">
+        <!-- Content will be injected by JavaScript -->
+    </section>
+
+    <!-- PRIVACY POLICY SECTION -->
+    <section class="card" id="privacy-section">
+        <!-- Content will be injected by JavaScript -->
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2026 PDF to JPG Converter X. All rights reserved.</p>
+</footer>
+
+<script>
+    const content = {
+        en: {
+            title: "PDF to JPG Converter X",
+            subtitle: "Batch Print & Image Resize Engine for Windows",
+            promoTitle: "About the Application",
+            promoBody: "<p><strong>PDF to JPG Converter X</strong> is a high-performance native desktop tool for Windows, built specifically for instant batch processing, precise image rendering, and effortless printing.</p><h3>Key Features:</h3><ul><li><strong>100% Private:</strong> Processing happens completely locally on your PC. No cloud uploads.</li><li><strong>Smart Resize:</strong> Automatic 1:1 original aspect ratio preservation.</li><li><strong>Batch Printing:</strong> Send multiple rendered pages directly to the system printer in one click.</li><li><strong>Fluent Design:</strong> Modern interface fully integrated with Windows 10 & 11.</li></ul>",
+            privTitle: "Privacy Policy",
+            privBody: "<p>This privacy policy governs your use of the software application <strong>PDF to JPG Converter X</strong> for mobile/desktop devices that was created by Developer.</p><h3>1. User Privacy & Data Collection</h3><p>Our core principle is absolute data privacy. The Application <strong>does not collect, store, transmit, or share</strong> any personal data, files, documents, or analytics information.</p><h3>2. File Processing</h3><p>All PDF rendering, image conversion, resizing, and printing operations are performed strictly <strong>locally on the user's device</strong>. No data is ever uploaded to external cloud servers, websites, or third-party APIs.</p><h3>3. Internet Access</h3><p>The Application works completely offline and does not require an internet connection to function. It does not contain any background tracking scripts, telemetry, or advertising modules.</p><h3>4. Contact Us</h3><p>If you have any questions regarding privacy while using the Application, please contact us via our official repository channels.</p>"
+        },
+        ru: {
+            title: "PDF to JPG Converter X",
+            subtitle: "Движок пакетной печати и изменения размеров для Windows",
+            promoTitle: "О программе",
+            promoBody: "<p><strong>PDF to JPG Converter X</strong> — это высокопроизводительное нативное приложение для Windows, разработанное специально для мгновенной пакетной обработки, точного рендеринга страниц и удобной отправки на печать.</p><h3>Ключевые преимущества:</h3><ul><li><strong>100% Конфиденциально:</strong> Обработка происходит локально на вашем ПК. Без облачных загрузок.</li><li><strong>Умный ресайз:</strong> Автоматическое сохранение оригинальных пропорций 1:1.</li><li><strong>Пакетная печать:</strong> Отправка множества страниц на системный принтер в один клик.</li><li><strong>Fluent Design:</strong> Современный интерфейс, полностью интегрированный с Windows 10 и 11.</li></ul>",
+            privTitle: "Политика конфиденциальности",
+            privBody: "<p>Настоящая политика конфиденциальности определяет порядок обработки данных при использовании приложения <strong>PDF to JPG Converter X</strong> для устройств под управлением Windows.</p><h3>1. Сбор данных и конфиденциальность</h3><p>Нашим главным приоритетом является абсолютная защита вашей информации. Приложение <strong>не собирает, не хранит, не передает и не публикует</strong> личные данные пользователей, файлы или телеметрию.</p><h3>2. Обработка файлов</h3><p>Все операции по рендерингу PDF, конвертации в JPEG, изменению веса и отправке на печать выполняются <strong>строго локально на устройстве пользователя</strong>. Файлы никогда не отправляются на внешние серверы или сторонние API.</p><h3>3. Доступ к сети Интернет</h3><p>Приложение работает полностью автономно (офлайн). Оно не содержит скрытых скриптов отслеживания, аналитических метрик или рекламных модулей.</p><h3>4. Контакты</h3><p>Если у вас возникли вопросы по поводу конфиденциальности при использовании программы, вы можете связаться с нами через официальные каналы репозитория проекта.</p>"
+        }
+    };
+
+    function switchLang(lang) {
+        document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+        event.target.classList.add('active');
+        
+        document.getElementById('main-title').innerText = content[lang].title;
+        document.getElementById('main-subtitle').innerText = content[lang].subtitle;
+        
+        document.getElementById('promo-section').innerHTML = `<h2>${content[lang].promoTitle}</h2>${content[lang].promoBody}`;
+        document.getElementById('privacy-section').innerHTML = `<h2>${content[lang].privTitle}</h2>${content[lang].privBody}`;
+    }
+
+    // Инициализация по умолчанию на английском
+    switchLang('en');
+</script>
+</body>
+</html>
