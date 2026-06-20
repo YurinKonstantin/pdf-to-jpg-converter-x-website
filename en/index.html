@@ -4,29 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PDF to JPG Converter X - Official Site</title>
+    <!-- Подключение иконки во вкладке браузера -->
+    <link rel="icon" type="image/png" href="../favicon.png">
     <style>
-        :root { --primary: #0078d4; --text: #201f1e; --bg: #f3f2f1; --card: #ffffff; }
+        :root { --primary: #0078d4; --primary-hover: #106ebe; --text: #201f1e; --bg: #f3f2f1; --card: #ffffff; }
         body { font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; padding: 0; }
-        header { background: var(--card); border-bottom: 1px solid #e1dfdd; padding: 20px 30px; display: flex; justify-content: space-between; align-items: center; }
-        .brand h1 { margin: 0; font-size: 24px; color: var(--primary); }
-        .brand p { margin: 5px 0 0 0; font-size: 14px; color: #605e5c; }
-        .lang-switch a { text-decoration: none; color: var(--primary); padding: 6px 12px; border: 1px solid var(--primary); border-radius: 4px; font-size: 13px; font-weight: 600; margin-left: 8px; }
+        
+        header { background: var(--card); border-bottom: 1px solid #e1dfdd; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 8px rgba(0,0,0,0.02); }
+        .header-left { display: flex; align-items: center; gap: 20px; }
+        .app-icon { width: 64px; height: 64px; object-fit: contain; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.15)); }
+        .brand h1 { margin: 0; font-size: 26px; color: var(--primary); font-weight: 700; }
+        .brand p { margin: 3px 0 0 0; font-size: 14px; color: #605e5c; }
+        
+        .lang-switch a { text-decoration: none; color: var(--primary); padding: 6px 14px; border: 1px solid var(--primary); border-radius: 6px; font-size: 13px; font-weight: 600; margin-left: 8px; transition: all 0.2s ease; }
         .lang-switch a.active { background: var(--primary); color: white; }
-        .container { max-width: 800px; margin: 30px auto; padding: 0 20px; }
-        .card { background: var(--card); padding: 30px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 25px; }
-        h2, h3 { color: var(--primary); }
+        .lang-switch a:not(.active):hover { background: #eff6fc; }
+        
+        .container { max-width: 850px; margin: 40px auto; padding: 0 20px; }
+        .card { background: var(--card); padding: 40px; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.04); border: 1px solid #edebe9; margin-bottom: 30px; }
+        
+        h2, h3 { color: var(--primary); font-weight: 600; }
+        h2 { margin-top: 0; border-bottom: 2px solid #f3f2f1; padding-bottom: 10px; }
         ul { padding-left: 20px; }
-        .footer-links { text-align: center; margin-top: 40px; padding: 20px; font-size: 14px; }
-        .footer-links a { color: var(--primary); text-decoration: none; margin: 0 10px; }
-        .footer-links a:hover { text-decoration: underline; }
+        li { margin-bottom: 10px; }
+        
+        /* Стильная кнопка Microsoft Store */
+        .store-badge-container { display: flex; justify-content: center; margin: 35px 0 15px 0; }
+        .store-link { transition: transform 0.2s ease, filter 0.2s ease; display: inline-block; }
+        .store-link:hover { transform: scale(1.03); filter: brightness(1.1); }
+        .store-badge { height: 60px; pointer-events: none; }
+        
+        .footer-links { text-align: center; margin-top: 50px; padding: 30px 20px; font-size: 14px; border-top: 1px solid #e1dfdd; background: var(--card); }
+        .footer-links a { color: var(--primary); text-decoration: none; margin: 0 15px; font-weight: 600; }
+        .footer-links a:hover { text-decoration: underline; color: var(--primary-hover); }
     </style>
 </head>
 <body>
 
 <header>
-    <div class="brand">
-        <h1>PDF to JPG Converter X</h1>
-        <p>Batch Print & Image Resize Engine for Windows</p>
+    <div class="header-left">
+        <!-- Крупный логотип приложения в шапке -->
+        <img src="../app_logo.png" alt="PDF to JPG Converter X Logo" class="app-icon">
+        <div class="brand">
+            <h1>PDF to JPG Converter X</h1>
+            <p>Batch Print & Image Resize Engine for Windows</p>
+        </div>
     </div>
     <div class="lang-switch">
         <a href="#" class="active">EN</a>
@@ -36,16 +58,24 @@
 
 <div class="container">
     <section class="card">
-        <h2>About the Application</h2>
+        <h2>Professional Document Workflow</h2>
         <p><strong>PDF to JPG Converter X</strong> is a high-performance native desktop tool for Windows, built specifically for instant batch processing, precise image rendering, and effortless printing.</p>
         
+        <!-- Официальный бейдж Microsoft Store -->
+        <div class="store-badge-container">
+            <!-- Замените YOUR_APP_ID на ID, полученный в Partner Center -->
+            <a href="https://microsoft.com" target="_blank" class="store-link">
+                <img src="https://microsoft.com" alt="Get it from Microsoft Store" class="store-badge"/>
+            </a>
+        </div>
+
         <h3>Key Features:</h3>
         <ul>
-            <li><strong>100% Private & Offline:</strong> Processing happens completely locally on your PC. No cloud uploads.</li>
-            <li><strong>Smart Resize 1:1:</strong> Automatic pixel-for-pixel original aspect ratio preservation.</li>
-            <li><strong>Batch Printing:</strong> Send multiple rendered pages directly to the system printer in one click.</li>
-            <li><strong>Fluent Design:</strong> Modern interface fully integrated with Windows 10 & 11.</li>
-            <li><strong>Zero-Dependency:</strong> Extremely lightweight, fast, and secure.</li>
+            <li><strong>100% Private & Offline:</strong> Processing happens completely locally on your PC. No cloud uploads, absolute data security.</li>
+            <li><strong>Smart Resize 1:1:</strong> Automatic pixel-for-pixel original aspect ratio preservation with ultra-sharp text rendering.</li>
+            <li><strong>Batch Printing:</strong> Send multiple rendered pages directly to any system printer in one click.</li>
+            <li><strong>Fluent UI Design:</strong> Modern interface fully integrated with Windows 10 & 11 design guidelines.</li>
+            <li><strong>Zero-Dependency:</strong> Extremely lightweight app footprint with ultra-low RAM consumption.</li>
         </ul>
     </section>
 </div>
