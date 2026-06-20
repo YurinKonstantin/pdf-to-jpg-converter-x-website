@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://w3.org" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Градиент для заднего листа (PDF) -->
+    <linearGradient id="pdfGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E1422A"/>
+      <stop offset="100%" stop-color="#A81D0B"/>
+    </linearGradient>
+    <!-- Градиент для переднего листа (JPG/Image) -->
+    <linearGradient id="jpgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3AA0FF"/>
+      <stop offset="100%" stop-color="#0056B3"/>
+    </linearGradient>
+    <!-- Градиент для элемента ландшафта (горы) -->
+    <linearGradient id="mountainGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.6"/>
+    </linearGradient>
+    <!-- Мягкая Fluent тень -->
+    <filter id="fluentShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <drop-shadow dx="4" dy="12" stdDeviation="10" flood-color="#000000" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <!-- ЗАДНИЙ ЛИСТ: Символизирует PDF -->
+  <g filter="url(#fluentShadow)">
+    <rect x="64" y="64" width="280" height="340" rx="16" fill="url(#pdfGrad)" />
+    <!-- Текст PDF на листе -->
+    <text x="94" y="130" fill="#FFFFFF" font-family="Segoe UI, sans-serif" font-size="42" font-weight="900" letter-spacing="1">PDF</text>
+    <!-- Стилизованные линии текста документа -->
+    <line x1="94" y1="180" x2="280" y2="180" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" opacity="0.4"/>
+    <line x1="94" y1="220" x2="240" y2="220" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" opacity="0.4"/>
+    <line x1="94" y1="260" x2="290" y2="260" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" opacity="0.4"/>
+  </g>
+
+  <!-- ПЕРЕДНИЙ ЛИСТ: Символизирует JPG и букву X -->
+  <g filter="url(#fluentShadow)">
+    <!-- Лист смещен вправо-вниз -->
+    <rect x="168" y="140" width="280" height="340" rx="16" fill="url(#jpgGrad)" />
+    
+    <!-- Иконка изображения внутри (Горы и солнце) -->
+    <circle cx="230" cy="210" r="24" fill="#FFFFFF" opacity="0.9"/>
+    <polygon points="168,420 280,280 360,370 448,250 448,420" fill="url(#mountainGrad)"/>
+    
+    <!-- Контрастная плашка с буквой X (Брендинг) -->
+    <rect x="360" y="140" width="88" height="88" rx="16" fill="#003975" opacity="0.8"/>
+    <text x="390" y="202" fill="#FFFFFF" font-family="Segoe UI, sans-serif" font-size="54" font-weight="900">X</text>
+  </g>
+
+  <!-- СТРЕЛКА-ТРАНСФОРМАЦИЯ (Связующий элемент) -->
+  <path d="M 330 105 L 375 150 L 330 195" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" filter="url(#fluentShadow)"/>
+</svg>
