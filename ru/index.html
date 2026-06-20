@@ -4,29 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PDF to JPG Converter X - Официальный сайт</title>
+    <link rel="icon" type="image/png" href="../favicon.png">
     <style>
-        :root { --primary: #0078d4; --text: #201f1e; --bg: #f3f2f1; --card: #ffffff; }
+        :root { --primary: #0078d4; --primary-hover: #106ebe; --text: #201f1e; --bg: #f3f2f1; --card: #ffffff; }
         body { font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; padding: 0; }
-        header { background: var(--card); border-bottom: 1px solid #e1dfdd; padding: 20px 30px; display: flex; justify-content: space-between; align-items: center; }
-        .brand h1 { margin: 0; font-size: 24px; color: var(--primary); }
-        .brand p { margin: 5px 0 0 0; font-size: 14px; color: #605e5c; }
-        .lang-switch a { text-decoration: none; color: var(--primary); padding: 6px 12px; border: 1px solid var(--primary); border-radius: 4px; font-size: 13px; font-weight: 600; margin-left: 8px; }
+        
+        header { background: var(--card); border-bottom: 1px solid #e1dfdd; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 8px rgba(0,0,0,0.02); }
+        .header-left { display: flex; align-items: center; gap: 20px; }
+        .app-icon { width: 64px; height: 64px; object-fit: contain; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.15)); }
+        .brand h1 { margin: 0; font-size: 26px; color: var(--primary); font-weight: 700; }
+        .brand p { margin: 3px 0 0 0; font-size: 14px; color: #605e5c; }
+        
+        .lang-switch a { text-decoration: none; color: var(--primary); padding: 6px 14px; border: 1px solid var(--primary); border-radius: 6px; font-size: 13px; font-weight: 600; margin-left: 8px; transition: all 0.2s ease; }
         .lang-switch a.active { background: var(--primary); color: white; }
-        .container { max-width: 800px; margin: 30px auto; padding: 0 20px; }
-        .card { background: var(--card); padding: 30px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 25px; }
-        h2, h3 { color: var(--primary); }
+        .lang-switch a:not(.active):hover { background: #eff6fc; }
+        
+        .container { max-width: 850px; margin: 40px auto; padding: 0 20px; }
+        .card { background: var(--card); padding: 40px; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.04); border: 1px solid #edebe9; margin-bottom: 30px; }
+        
+        h2, h3 { color: var(--primary); font-weight: 600; }
+        h2 { margin-top: 0; border-bottom: 2px solid #f3f2f1; padding-bottom: 10px; }
         ul { padding-left: 20px; }
-        .footer-links { text-align: center; margin-top: 40px; padding: 20px; font-size: 14px; }
-        .footer-links a { color: var(--primary); text-decoration: none; margin: 0 10px; }
-        .footer-links a:hover { text-decoration: underline; }
+        li { margin-bottom: 10px; }
+        
+        .store-badge-container { display: flex; justify-content: center; margin: 35px 0 15px 0; }
+        .store-link { transition: transform 0.2s ease, filter 0.2s ease; display: inline-block; }
+        .store-link:hover { transform: scale(1.03); filter: brightness(1.1); }
+        .store-badge { height: 60px; pointer-events: none; }
+        
+        .footer-links { text-align: center; margin-top: 50px; padding: 30px 20px; font-size: 14px; border-top: 1px solid #e1dfdd; background: var(--card); }
+        .footer-links a { color: var(--primary); text-decoration: none; margin: 0 15px; font-weight: 600; }
+        .footer-links a:hover { text-decoration: underline; color: var(--primary-hover); }
     </style>
 </head>
 <body>
 
 <header>
-    <div class="brand">
-        <h1>PDF to JPG Converter X</h1>
-        <p>Движок пакетной печати и изменения размеров для Windows</p>
+    <div class="header-left">
+        <img src="../app_logo.png" alt="Логотип PDF to JPG Converter X" class="app-icon">
+        <div class="brand">
+            <h1>PDF to JPG Converter X</h1>
+            <p>Движок пакетной печати и изменения размеров для Windows</p>
+        </div>
     </div>
     <div class="lang-switch">
         <a href="../en/index.html">EN</a>
@@ -36,16 +55,23 @@
 
 <div class="container">
     <section class="card">
-        <h2>О программе</h2>
+        <h2>Профессиональная обработка документов</h2>
         <p><strong>PDF to JPG Converter X</strong> — это высокопроизводительное нативное приложение для Windows, разработанное специально для мгновенной пакетной обработки, точного рендеринга страниц и удобной отправки на печать.</p>
         
+        <!-- Официальный РУССКИЙ бейдж Microsoft Store -->
+        <div class="store-badge-container">
+            <a href="https://microsoft.com" target="_blank" class="store-link">
+                <img src="https://microsoft.com" alt="Доступно в Microsoft Store" class="store-badge"/>
+            </a>
+        </div>
+
         <h3>Ключевые преимущества:</h3>
         <ul>
-            <li><strong>100% Конфиденциально:</strong> Обработка происходит локально на вашем ПК. Без облачных загрузок.</li>
-            <li><strong>Умный ресайз 1:1:</strong> Автоматическое сохранение оригинальных размеров пиксель-в-пиксель.</li>
-            <li><strong>Пакетная печать:</strong> Отправка множества страниц на системный принтер в один клик.</li>
-            <li><strong>Fluent Design:</strong> Современный интерфейс, полностью интегрированный с Windows 10 и 11.</li>
-            <li><strong>Zero-Dependency:</strong> Работает быстро, не требует сторонних библиотек и лицензий.</li>
+            <li><strong>100% Конфиденциально и Офлайн:</strong> Обработка происходит локально на вашем ПК. Никаких облачных загрузок, абсолютная защита личных файлов.</li>
+            <li><strong>Умный ресайз 1:1:</strong> Автоматическое сохранение оригинальных размеров пиксель-в-пиксель со сверхчетким рендерингом шрифтов.</li>
+            <li><strong>Пакетная печать:</strong> Отправляйте множество отрендеренных страниц на любой системный принтер в один клик.</li>
+            <li><strong>Fluent UI дизайн:</strong> Современный интерфейс, полностью интегрированный с гайдлайнами Windows 10 и 11.</li>
+            <li><strong>Zero-Dependency:</strong> Легковесная архитектура без тяжелых фоновых библиотек с минимальным потреблением ОЗУ.</li>
         </ul>
     </section>
 </div>
