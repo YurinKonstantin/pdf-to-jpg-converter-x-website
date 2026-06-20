@@ -1,94 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="meta-title">PDF to JPG Converter X - Official Site</title>
-    <style>
-        :root { --primary: #0078d4; --text: #201f1e; --bg: #f3f2f1; --card: #ffffff; }
-        body { font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; padding: 0; }
-        header { background: var(--card); border-bottom: 1px solid #e1dfdd; padding: 30px; text-align: center; }
-        .container { max-width: 800px; margin: 30px auto; padding: 0 20px; }
-        .card { background: var(--card); padding: 30px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 25px; }
-        h1, h2, h3 { color: var(--primary); }
-        h1 { margin-top: 0; }
-        ul { padding-left: 20px; }
-        .footer-links { text-align: center; margin-top: 40px; padding: 20px; font-size: 14px; }
-        .footer-links a { color: var(--primary); text-decoration: none; margin: 0 10px; font-weight: bold; }
-        .footer-links a:hover { text-decoration: underline; }
-        .lang-badge { display: inline-block; background: #e1dfdd; padding: 2px 8px; border-radius: 4px; font-size: 11px; margin-bottom: 10px; font-weight: 600; }
-    </style>
+    <title>Redirecting...</title>
+    <script>
+        // Получаем основной язык браузера пользователя
+        const userLang = navigator.language || navigator.userLanguage;
+        
+        // Если язык русский или украинский/белорусский, шлем в /ru/, иначе в /en/
+        if (userLang.startsWith('ru') || userLang.startsWith('be') || userLang.startsWith('uk')) {
+            window.location.href = "./ru/index.html";
+        } else {
+            window.location.href = "./en/index.html";
+        }
+    </script>
 </head>
 <body>
-
-<header>
-    <span class="lang-badge" id="lang-indicator">Language: English</span>
-    <h1 id="app-title">PDF to JPG Converter X</h1>
-    <p id="app-subtitle">Batch Print & Image Resize Engine for Windows</p>
-</header>
-
-<div class="container">
-    <section class="card">
-        <h2 id="section-title">About the Application</h2>
-        <div id="section-content">
-            <p><strong>PDF to JPG Converter X</strong> is a high-performance native desktop tool for Windows, built specifically for instant batch processing, precise image rendering, and effortless printing.</p>
-            <h3>Key Features:</h3>
-            <ul>
-                <li><strong>100% Private & Offline:</strong> Processing happens completely locally on your PC. No cloud uploads.</li>
-                <li><strong>Smart Resize 1:1:</strong> Automatic pixel-for-pixel original aspect ratio preservation.</li>
-                <li><strong>Batch Printing:</strong> Send multiple rendered pages directly to the system printer in one click.</li>
-                <li><strong>Fluent Design:</strong> Modern interface fully integrated with Windows 10 & 11.</li>
-                <li><strong>Zero-Dependency:</strong> Extremely lightweight, fast, and secure.</li>
-            </ul>
-        </div>
-    </section>
-</div>
-
-<div class="footer-links">
-    <a href="en_privacy.html" id="privacy-link">Privacy Policy</a>
-    <p>&copy; 2026 PDF to JPG Converter X. All rights reserved.</p>
-</div>
-
-<script>
-    // База переводов
-    const translations = {
-        ru: {
-            metaTitle: "PDF to JPG Converter X - Официальный сайт",
-            langIndicator: "Язык: Русский",
-            appSubtitle: "Движок пакетной печати и изменения размеров для Windows",
-            sectionTitle: "О программе",
-            privacyText: "Политика конфиденциальности",
-            privacyUrl: "ru_privacy.html",
-            sectionContent: `
-                <p><strong>PDF to JPG Converter X</strong> — это высокопроизводительное нативное приложение для Windows, разработанное специально для мгновенной пакетной обработки, точного рендеринга страниц и удобной отправки на печать.</p>
-                <h3>Ключевые преимущества:</h3>
-                <ul>
-                    <li><strong>100% Конфиденциально:</strong> Обработка происходит локально на вашем ПК. Без облачных загрузок.</li>
-                    <li><strong>Умный ресайз 1:1:</strong> Автоматическое сохранение оригинальных размеров пиксель-в-пиксель.</li>
-                    <li><strong>Пакетная печать:</strong> Отправка множества страниц на системный принтер в один клик.</li>
-                    <li><strong>Fluent Design:</strong> Современный интерфейс, полностью интегрированный с Windows 10 и 11.</li>
-                    <li><strong>Zero-Dependency:</strong> Работает быстро, не требует сторонних библиотек и лицензий.</li>
-                </ul>
-            `
-        }
-    };
-
-    // Определение локали
-    const userLang = navigator.language || navigator.userLanguage;
-    
-    // Если пользователь из СНГ — подменяем контент на лету
-    if (userLang.startsWith('ru') || userLang.startsWith('be') || userLang.startsWith('uk')) {
-        document.getElementById('meta-title').innerText = translations.ru.metaTitle;
-        document.getElementById('lang-indicator').innerText = translations.ru.langIndicator;
-        document.getElementById('app-subtitle').innerText = translations.ru.appSubtitle;
-        document.getElementById('section-title').innerText = translations.ru.sectionTitle;
-        document.getElementById('section-content').innerHTML = translations.ru.sectionContent;
-        
-        // Меняем ссылку на русскую политику конфиденциальности
-        const privLink = document.getElementById('privacy-link');
-        privLink.innerText = translations.ru.privacyText;
-        privLink.href = translations.ru.privacyUrl;
-    }
-</script>
+    <p>Redirecting to the appropriate language version... <a href="./en/index.html">Click here</a> if you are not redirected.</p>
 </body>
 </html>
