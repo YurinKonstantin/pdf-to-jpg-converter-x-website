@@ -7,11 +7,14 @@
     <style>
         :root { --primary: #0078d4; --text: #201f1e; --bg: #f3f2f1; --card: #ffffff; }
         body { font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; padding: 0; }
-        header { background: var(--card); border-bottom: 1px solid #e1dfdd; padding: 30px; text-align: center; }
+        header { background: var(--card); border-bottom: 1px solid #e1dfdd; padding: 20px 30px; display: flex; justify-content: space-between; align-items: center; }
+        .brand h1 { margin: 0; font-size: 24px; color: var(--primary); }
+        .brand p { margin: 5px 0 0 0; font-size: 14px; color: #605e5c; }
+        .lang-switch a { text-decoration: none; color: var(--primary); padding: 6px 12px; border: 1px solid var(--primary); border-radius: 4px; font-size: 13px; font-weight: 600; margin-left: 8px; }
+        .lang-switch a.active { background: var(--primary); color: white; }
         .container { max-width: 800px; margin: 30px auto; padding: 0 20px; }
         .card { background: var(--card); padding: 30px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 25px; }
-        h1, h2, h3 { color: var(--primary); }
-        h1 { margin-top: 0; }
+        h2, h3 { color: var(--primary); }
         ul { padding-left: 20px; }
         .footer-links { text-align: center; margin-top: 40px; padding: 20px; font-size: 14px; }
         .footer-links a { color: var(--primary); text-decoration: none; margin: 0 10px; }
@@ -21,8 +24,14 @@
 <body>
 
 <header>
-    <h1>PDF to JPG Converter X</h1>
-    <p>Batch Print & Image Resize Engine for Windows</p>
+    <div class="brand">
+        <h1>PDF to JPG Converter X</h1>
+        <p>Batch Print & Image Resize Engine for Windows</p>
+    </div>
+    <div class="lang-switch">
+        <a href="#" class="active">EN</a>
+        <a href="../ru/index.html">RU</a>
+    </div>
 </header>
 
 <div class="container">
